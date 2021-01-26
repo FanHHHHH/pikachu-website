@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>画一只皮卡丘给你看</title>
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+  </head>
+  <body>
+    <style>* {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+      .demo1 {
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 50vh;
+        background: white;
+      }
+      .demo1::-webkit-scrollbar {
+        display: none;
+      }
+      .buttons {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+      .buttons > button {
+        margin-bottom: 10px;
+        padding: 0.5em 2em;
+      }
+      .speed {
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 10;
+        margin-top: 100px;
+        margin-right: 200px;
+        /* background: #000; */
+      }</style>
+    <style class="demo"></style>
+    <div class="demo1"></div>
+    <div class="buttons">
+      <button class="btnPause">暂停</button>
+      <button class="btnContinue">播放</button>
+      <button class="btnSlow">慢速</button>
+      <button class="btnMedium">中速</button>
+      <button class="btnFast">快速</button>
+    </div>
+    <span class="speed">默认速度：快速</span>
+    <div class="pikachu">
+      <div class="eye left"></div>
+      <div class="eye right"></div>
+      <div class="nose"></div>
+      <div class="mouth">
+        <div class="up lip left"></div>
+        <div class="up lip right"></div>
+        <div class="down">
+          <div class="inner"></div>
+        </div>
+      </div>
+      <div class="reddot left">
+        <!-- <img src="../imgs/flash.gif" /> -->
+      </div>
+      <div class="reddot right">
+        <!-- <img src="../imgs/flash.gif" /> -->
+      </div>
+    </div>
+    <script src="main.ea2e1be1.js"></script>
+  </body>
+</html>
